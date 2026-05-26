@@ -16,8 +16,8 @@ from query import build_prompt, embed_question, retrieve, synthesise
 
 CHROMA_DIR = "chroma_db"
 
-st.title("Frankfurt School")
-st.caption("A conversation grounded in critical theory texts.")
+st.title("Western Esotericism & Critical Theory")
+st.caption("Exploring the connections between the Hermetic tradition, German Idealism, Marxism, and the Frankfurt School.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

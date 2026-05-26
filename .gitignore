@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets and local config
+.env
+system-certs.pem
+
+# Vector database (generated, not source)
+chroma_db/
+
+# Copyrighted source texts — not for distribution
+*.pdf
+texts/hegel_phenomenology_spirit_miller.txt
+texts/hegel_science_of_logic_di_giovanni.txt
+
+# Generated / local artefacts
+.DS_Store
+main.py
+chunks_export.csv

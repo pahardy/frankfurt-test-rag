@@ -4,10 +4,11 @@ A conversational retrieval-augmented generation system grounded in Western philo
 
 ## Corpus
 
-~9,200 chunks across 57 texts including:
+~10,550 chunks across 63 texts including:
 
 - **Karl Marx** — Capital Vol. 1, Grundrisse, Economic & Philosophic Manuscripts, German Ideology, Communist Manifesto, Theses on Feuerbach
 - **Frankfurt School** — Adorno, Benjamin, Habermas, Horkheimer, Lukács, Marcuse
+- **Sigmund Freud** — Civilization and Its Discontents, Beyond the Pleasure Principle, Group Psychology and the Analysis of the Ego, Totem and Taboo, Three Essays on the Theory of Sexuality, The Future of an Illusion
 - **Hegel** — Phenomenology of Spirit, Science of Logic, Philosophy of Right, Philosophy of History, Philosophy of Mind, Shorter Logic
 - **Jakob Böhme** — Signature of All Things, Confessions
 - **Paracelsus** — Aurora of the Philosophers, Coelum Philosophorum, Tincture of the Philosophers, Treasure of Treasures, Of the Nature of Things

@@ -31,6 +31,40 @@ CERT = os.getenv("SSL_CERT_FILE")
 
 TEXTS = {
     # -------------------------------------------------------------------------
+    # Sigmund Freud — public domain translations from Project Gutenberg
+    # -------------------------------------------------------------------------
+
+    # Civilization and Its Discontents (1930, Riviere trans.) — the single most
+    # cited Freud text in Critical Theory: repression, instinct, and social order.
+    "freud_civilization_and_its_discontents":
+        "https://www.gutenberg.org/cache/epub/78221/pg78221-images.html",
+
+    # Beyond the Pleasure Principle (1920) — introduces Eros and Thanatos
+    # (life/death drives); the theoretical foundation of Marcuse's Eros and Civilization.
+    "freud_beyond_the_pleasure_principle":
+        "https://www.gutenberg.org/cache/epub/76031/pg76031-images.html",
+
+    # Group Psychology and the Analysis of the Ego (1921, Strachey trans. 1922) —
+    # drives Adorno and Horkheimer's work on mass psychology and authoritarianism.
+    "freud_group_psychology_and_analysis_of_ego":
+        "https://www.gutenberg.org/cache/epub/35877/pg35877-images.html",
+
+    # Totem and Taboo (1913, Brill trans.) — applies psychoanalysis to culture
+    # and social origins; directly engaged in Dialectic of Enlightenment.
+    "freud_totem_and_taboo":
+        "https://www.gutenberg.org/cache/epub/41214/pg41214-images.html",
+
+    # Three Contributions to the Theory of Sex (1905, Brill trans.) — foundational
+    # theory of drives, sexuality, and repression underlying Frankfurt School critique.
+    "freud_three_essays_theory_of_sexuality":
+        "https://www.gutenberg.org/cache/epub/14969/pg14969-images.html",
+
+    # The Future of an Illusion (1927) — Freud's critique of religion and ideology;
+    # resonates directly with Frankfurt School's critique of culture and false consciousness.
+    "freud_future_of_an_illusion":
+        "https://www.gutenberg.org/cache/epub/76774/pg76774-images.html",
+
+    # -------------------------------------------------------------------------
     # Karl Marx
     # -------------------------------------------------------------------------
 

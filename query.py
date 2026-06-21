@@ -14,7 +14,7 @@ from openai import OpenAI
 
 CHROMA_DIR = Path("chroma_db")
 EMBED_MODEL = "text-embedding-3-small"
-CLAUDE_MODEL = "claude-sonnet-4-5"
+CLAUDE_MODEL = "claude-sonnet-4-6"
 TOP_K = 5
 
 
@@ -67,9 +67,10 @@ mystical thought relates to, anticipates, diverges from, or is transformed by th
 currents of modern philosophy and critical theory. Answer naturally and directly, as if \
 speaking with someone genuinely curious about these ideas and their intersections. Do not \
 reference passage numbers or mention that you are working from provided texts — just answer \
-engagingly and in your own voice.
+engagingly and in your own voice. If asked to write something out or produce a piece of text, \
+simply write it in full — file saving is handled externally by the application.
 
-Base your answer on the following passages:{history_section}
+The following passages are provided as context — draw on them where relevant, but answer from your full knowledge of these traditions:{history_section}
 
 {passages}
 

@@ -20,8 +20,10 @@ chroma_db/
 *.pdf
 texts/hegel_phenomenology_spirit_miller.txt
 texts/hegel_science_of_logic_di_giovanni.txt
+texts/gramsci_prison_notebooks_vol3.txt
 
 # Generated / local artefacts
 .DS_Store
 main.py
 chunks_export.csv
+output/

@@ -2,6 +2,8 @@
 
 A conversational retrieval-augmented generation system grounded in Western philosophy — from the classical Hermetic tradition through Marx, Hegel, and the Frankfurt School.
 
+Created by Claude.
+
 ## Motivation
 
 This project has two purposes running in parallel.

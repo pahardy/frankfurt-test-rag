@@ -2,6 +2,16 @@
 
 A conversational retrieval-augmented generation system grounded in Western philosophy — from the classical Hermetic tradition through Marx, Hegel, and the Frankfurt School.
 
+## Motivation
+
+This project has two purposes running in parallel.
+
+The first is personal: an interest in the long tradition of Western esoteric and critical thought — the alchemists, the Hermetic texts, the idealist philosophers, and the Frankfurt School theorists who inherited and transformed all of it. The corpus was assembled to make that terrain explorable through conversation rather than reading in isolation.
+
+The second is technical: a working ground for learning how retrieval-augmented generation actually operates. Rather than using a toy dataset, the project is built on a real corpus of philosophical texts — dense, interconnected, and demanding enough to make the quality of the retrieval pipeline matter. The goal is to understand how chunking strategies, embedding models, similarity search, and LLM synthesis interact in practice, using Claude as the primary AI partner throughout.
+
+The two motivations reinforce each other: the subject matter is rich enough to stress-test the RAG pipeline, and the RAG pipeline makes the subject matter more accessible.
+
 ## Corpus
 
 ~10,550 chunks across 63 texts including:
@@ -26,7 +36,7 @@ cp .env.example .env
 ```
 
 Required keys in `.env`:
-- `OPENAI_API_KEY` — for text embeddings (`text-embedding-3-small`)
+- `OPENAI_API_KEY` — for text embeddings (`text-embedding-3-large`)
 - `ANTHROPIC_API_KEY` — for answer synthesis (Claude)
 
 If you're behind a corporate SSL proxy, export your system certificates to a `.pem` file and set `SSL_CERT_FILE=/path/to/certs.pem` in `.env`.
@@ -73,6 +83,6 @@ scrape.py  →  texts/*.txt  →  ingest.py  →  chroma_db/
 ```
 
 - **Chunking** — 400 words, 50-word overlap
-- **Embeddings** — OpenAI `text-embedding-3-small` (1536 dimensions)
+- **Embeddings** — OpenAI `text-embedding-3-large` (3072 dimensions)
 - **Vector store** — ChromaDB (local, persistent)
 - **Synthesis** — Anthropic Claude

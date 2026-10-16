@@ -92,6 +92,16 @@ html, body, .stApp, [data-testid="stAppViewContainer"] {
 .stSpinner > div {
     border-top-color: #b5922a !important;
 }
+.page-intro {
+    font-family: 'EB Garamond', Georgia, serif !important;
+    font-size: 1.05rem !important;
+    line-height: 1.9 !important;
+    color: #6a6458 !important;
+    font-style: italic !important;
+    margin: 1.75rem 0 2rem !important;
+    padding-bottom: 1.75rem !important;
+    border-bottom: 1px solid #25253a !important;
+}
 #rag-margins {
     position: fixed;
     inset: 0;
@@ -202,6 +212,17 @@ HEADER_HTML = (
 # ── Render header (iframe injects CSS + margin imagery into parent) ───────────
 st.iframe(HEADER_HTML, height=130)
 
+INTRO = (
+    "The Frankfurt School inherited more than it acknowledged. Behind its rigorous critique "
+    "of Enlightenment reason lies a longer shadow — alchemy, Hermeticism, Kabbalistic mysticism, "
+    "the esoteric currents that modernity claimed to have dissolved but never did. Benjamin’s "
+    "angel faces the wreckage of the past; Adorno finds negation where synthesis should be; "
+    "Hegel’s spirit moves through contradiction toward an absolute that forever recedes. "
+    "Ask what connects these worlds — trace the thread from the alchemists’ fire to "
+    "the dialectic, from Freud’s unconscious to Marx’s commodity, from the Rosicrucian "
+    "manifestos to the Dialectic of Enlightenment."
+)
+
 # ── State & clients ───────────────────────────────────────────────────────────
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -215,6 +236,8 @@ def load_clients():
     collection = chromadb.PersistentClient(path=CHROMA_DIR).get_collection("frankfurt")
     return openai_client, anthropic_client, collection
 
+
+st.markdown('<p class="page-intro">' + INTRO + '</p>', unsafe_allow_html=True)
 
 # ── Conversation ──────────────────────────────────────────────────────────────
 for message in st.session_state.messages:

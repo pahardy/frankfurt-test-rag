@@ -15,7 +15,7 @@ from openai import OpenAI
 
 TEXTS_DIR = Path("texts")
 CHROMA_DIR = Path("chroma_db")
-EMBED_MODEL = "text-embedding-3-small"
+EMBED_MODEL = "text-embedding-3-large"
 CHUNK_WORDS = 400
 OVERLAP_WORDS = 50
 BATCH_SIZE = 100  # number of chunks to embed in one API call
